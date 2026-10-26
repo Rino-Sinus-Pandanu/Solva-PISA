@@ -1,5 +1,19 @@
 <!doctype html>
 <html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101b36"><title>Solva-PISA | Series Latihan Soal Mirip PISA</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]']]
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+  onload="if (window.MathJax && window.MathJax.typesetPromise) window.MathJax.typesetPromise([document.getElementById('app')])">
+</script>
 <style>
 :root{--navy:#101b36;--navy2:#182849;--ink:#17233d;--muted:#68758e;--line:#e2e8f0;--paper:#fff;--bg:#f4f7fb;--gold:#f5b942;--teal:#0d9488;--green:#dcfce7;--red:#fee2e2;--shadow:0 14px 40px #1527480d}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.4;cursor:not-allowed}.shell{min-height:100vh}.topbar{background:var(--navy);color:white;padding:17px clamp(18px,4vw,56px);display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.08em}.mark{width:40px;height:40px;border-radius:12px;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-weight:950}.brand small{display:block;color:#a9b6ce;font-size:10px;letter-spacing:.16em;font-weight:600}.top-meta{color:#c7d2e4;font-size:12px}.container{max-width:1180px;margin:auto;padding:30px 22px 70px}.hero{background:radial-gradient(circle at 85% 10%,#2a426d 0,transparent 34%),var(--navy);color:white;border-radius:24px;padding:clamp(28px,5vw,58px);box-shadow:var(--shadow);position:relative;overflow:hidden}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.18em;font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.1;max-width:760px;margin:16px 0}.hero p{color:#c6d2e4;max-width:720px}.hero-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0}.metric{border:1px solid #ffffff20;background:#ffffff0b;padding:16px;border-radius:14px}.metric strong{display:block;font-size:24px;color:var(--gold)}.metric span{font-size:12px;color:#c6d2e4}.btn{border:0;border-radius:11px;padding:12px 18px;font-weight:800;transition:.18s}.btn-primary{background:var(--gold);color:var(--navy)}.btn-primary:hover{background:#ffcb63;transform:translateY(-1px)}.btn-dark{background:var(--navy);color:white}.btn-light{background:white;border:1px solid var(--line);color:var(--ink)}.btn-danger{background:#fff1f2;color:#9f1239;border:1px solid #fecdd3}.muted{color:var(--muted)}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow)}.intro-layout{display:grid;grid-template-columns:1.3fr .7fr;gap:20px;margin-top:22px}.checklist{padding:0;list-style:none;margin:12px 0}.checklist li{padding:9px 0;border-bottom:1px solid #eef2f7}.checklist li:before{content:'✓';color:var(--teal);font-weight:900;margin-right:10px}.app-layout{display:grid;grid-template-columns:265px minmax(0,1fr);gap:22px;align-items:start}.sidebar{position:sticky;top:16px}.side-title{font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:850;color:var(--muted);margin-bottom:12px}.unit-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.unit-btn{border:1px solid var(--line);background:white;border-radius:9px;padding:9px 4px;font-weight:800;color:#59657c}.unit-btn.active{background:var(--navy);border-color:var(--navy);color:white}.unit-btn.done:after{content:' ✓';color:var(--teal)}.progress{height:7px;background:#e8edf5;border-radius:99px;overflow:hidden}.progress>div{height:100%;background:var(--teal);transition:width .2s}.row-between{display:flex;align-items:center;justify-content:space-between;gap:14px}.pill{display:inline-flex;align-items:center;gap:6px;border-radius:99px;padding:5px 10px;font-size:11px;font-weight:800;background:#e9eef8;color:#344564}.pill.gold{background:#fff3d5;color:#8a5a00}.stimulus{background:#f8fafc;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:18px;margin:20px 0}.question{border:1px solid var(--line);border-radius:14px;padding:20px;margin:14px 0;background:white}.question h3{font-size:15px;margin:0 0 10px}.qmeta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.field{width:100%;border:1px solid #cbd5e1;border-radius:10px;padding:12px;background:white;color:var(--ink);outline:none}.field:focus{border-color:#647da8;box-shadow:0 0 0 3px #647da81a}.field.textarea{min-height:100px;resize:vertical}.option{display:flex;gap:11px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:10px;margin:8px 0;cursor:pointer}.option:has(input:checked){border-color:#536b91;background:#f4f7fc}.option input{margin-top:5px;accent-color:var(--navy)}.actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px}.tiny{font-size:12px}.notice{padding:13px 15px;border-radius:12px;background:#fff7e6;border:1px solid #f9df9b;color:#76500a;font-size:13px}.eval-card{border:1px solid var(--line);border-radius:14px;padding:20px;margin:14px 0;background:white}.eval-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}.answer-box{background:#f7f9fc;border:1px solid var(--line);border-radius:11px;padding:14px;overflow-wrap:anywhere}.key-box{background:#effcf8;border:1px solid #b7eee0;border-radius:11px;padding:14px;overflow-wrap:anywhere}.score-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}.score-buttons{display:flex;gap:6px;flex-wrap:wrap}.score-btn{min-width:38px;height:38px;border:1px solid #cbd5e1;background:white;border-radius:9px;font-weight:850}.score-btn.selected{background:var(--gold);border-color:#d99b20;color:var(--navy)}.result-score{font-size:clamp(54px,10vw,86px);font-weight:950;line-height:1;color:var(--navy)}.result-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}.result-stat{padding:18px;background:#f7f9fc;border:1px solid var(--line);border-radius:13px}.result-stat strong{display:block;font-size:24px}.hide{display:none!important}footer{color:var(--muted);text-align:center;font-size:11px;margin-top:28px}@media(max-width:850px){.intro-layout,.app-layout{grid-template-columns:1fr}.sidebar{position:static}.unit-list{grid-template-columns:repeat(8,minmax(0,1fr))}.eval-grid{grid-template-columns:1fr}}@media(max-width:540px){.container{padding:18px 12px 40px}.topbar{padding:12px 16px}.top-meta{display:none}.hero-grid,.result-grid{grid-template-columns:1fr}.unit-list{grid-template-columns:repeat(6,minmax(0,1fr))}.panel,.question{padding:16px}.actions{flex-wrap:wrap}.score-row{align-items:flex-start;flex-direction:column}}
 </style></head><body><header class="topbar"><div class="brand"><div class="mark">S</div><div>Solva-PISA <small>Series Latihan Soal Mirip PISA</small></div></div><div class="top-meta">Latihan Literasi Matematis · Barisan Bilangan</div></header><main class="container" id="app"></main><footer>(2026) Rino Sinus Pandanu</footer>
@@ -32,7 +46,7 @@ const quizData = [
             },
             {
                 unit: 4, title: "Suhu Udara di Jalur Pendakian", context: "Ilmiah",
-                stimulus: "Pos 1 di ketinggian 100 m, pos 2 di 200 m, dst sampai pos 12. Suhu di kaki bukit (0 m) adalah 31,0 derajat C. Suhu turun sekitar 0,6 derajat C setiap kenaikan 100 m. Jaket tipis perlu dipakai jika suhu kurang dari 25 derajat C.",
+                stimulus: "Sebuah kelompok pencinta alam mendaki sebuah bukit di Kalimantan Barat. Pos istirahat dipasang setiap kenaikan 100 m dari kaki bukit, sehingga pos 1 berada pada ketinggian 100 m, pos 2 pada 200 m, dan seterusnya sampai pos 12. Termometer di kaki bukit (ketinggian 0 m) menunjukkan 31,0 °C. Menurut data stasiun cuaca, suhu udara turun sekitar 0,6 °C untuk setiap kenaikan 100 m. Anggota kelompok membawa jaket tipis yang perlu dipakai jika suhu kurang dari 25 °C.",
                 questions: [
                     { id: '4a', type: 'isian', text: "Berapa suhu udara di pos 8?", maxScore: 1, key: "26.2", rubric: "Jawaban 26.2 atau 26,2." },
                     { id: '4b', type: 'uraian', text: "Mulai pos ke berapa jaket tipis perlu dipakai? Jelaskan mengapa pos 10 belum termasuk.", maxScore: 3, key: "Pos 11", rubric: "Kredit Penuh (3): Model benar (31 - 0.6n < 25), mendapat Pos 11, dan menjelaskan pos 10 tepat 25 derajat. Kredit Sebagian (2): Pos benar tapi tanpa penjelasan batas pos 10. Kredit Sebagian (1): Hanya model benar." }
@@ -40,7 +54,7 @@ const quizData = [
             },
             {
                 unit: 5, title: "Rencana Latihan Lari Sinta", context: "Pribadi",
-                stimulus: "Hari pertama Sinta menempuh 1,2 km. Latihan menambah jarak 0,3 km setiap hari dari hari sebelumnya. Dokter menyarankan batas harian tidak lebih dari 8 km.",
+                stimulus: "Sinta menggunakan aplikasi kebugaran untuk menyiapkan lomba lari. Pada hari pertama ia menempuh 1,2 km, dan rencana latihan menambah jarak 0,3 km setiap hari dibandingkan hari sebelumnya. Dokter olahraga menyarankan agar jarak latihan harian tidak lebih dari 8 km.",
                 questions: [
                     { id: '5a', type: 'isian', text: "Berapa km jarak latihan Sinta pada hari ke-10?", maxScore: 1, key: "3.9", rubric: "Jawaban 3.9 atau 3,9." },
                     { id: '5b', type: 'uraian', text: "Aplikasi memprediksi jarak hari ke-30 adalah 9,9 km. Periksa kebenaran hitungan aplikasi, lalu nilai apakah prediksi itu dapat diikuti Sinta.", maxScore: 2, key: "Hitungan benar, tapi melanggar saran.", rubric: "Kredit Penuh (2): Membuktikan hitungan 9.9 km benar secara matematis, namun menyimpulkan tidak bisa diikuti karena > 8 km." },
@@ -49,7 +63,7 @@ const quizData = [
             },
             {
                 unit: 6, title: "Produksi Minuman Lidah Buaya", context: "Pekerjaan",
-                stimulus: "Produksi bertambah tetap tiap hari. Hari ke-3 diproduksi 450 botol, hari ke-8 diproduksi 700 botol. Kapasitas maksimum mesin 1.000 botol/hari.",
+                stimulus: "Sebuah usaha kecil di Pontianak memproduksi minuman lidah buaya. Pada pekan promosi, jumlah botol yang diproduksi bertambah dengan banyak yang sama setiap hari. Pada hari ke-3 diproduksi 450 botol dan pada hari ke-8 diproduksi 700 botol. Mesin pengisi botol berkapasitas maksimum 1.000 botol per hari.",
                 questions: [
                     { id: '6a', type: 'uraian', text: "Berapa botol produksi hari pertama, dan berapa tambahan produksi setiap hari?", maxScore: 2, key: "Awal 350, Tambahan 50", rubric: "Kredit Penuh (2): Menemukan a = 350 dan b = 50. Kredit Sebagian (1): Hanya a atau b yang benar." },
                     { id: '6b', type: 'isian', text: "Berapa botol yang akan diproduksi pada hari ke-15 jika pola berlanjut?", maxScore: 1, key: "1050", rubric: "Jawaban 1050." },
@@ -58,7 +72,7 @@ const quizData = [
             },
             {
                 unit: 7, title: "Segitiga dari Batang Korek Api", image: "https://raw.githubusercontent.com/Rino-Sinus-Pandanu/Solva-PISA/main/Nomor%207.png", context: "Pribadi",
-                stimulus: "Pola 1: 1 segitiga (3 batang). Pola 2: 2 segitiga sejajar (5 batang). Pola 3: 3 segitiga (7 batang). Segitiga bersambung dan berbagi sisi vertikal miring.",
+                stimulus: "Dalam sebuah lomba kreativitas, peserta menyusun batang korek api membentuk deretan segitiga sama sisi yang saling bersambung seperti pada gambar di bawah ini. Pola ke-1 terdiri atas 1 segitiga (3 batang), pola ke-2 terdiri atas 2 segitiga (5 batang), pola ke-3 terdiri atas 3 segitiga (7 batang), dan seterusnya.",
                 questions: [
                     { id: '7a', type: 'uraian', text: "Tuliskan rumus banyak batang korek api pola ke-n, dan hitung batang untuk pola ke-25.", maxScore: 1, key: "U_n = 2n + 1. U_25 = 51", rubric: "Kredit Penuh (1): Rumus dan hasil 51 benar." },
                     { id: '7b', type: 'pgs', text: "Seorang peserta mengira pola ke-25 butuh 25x3=75 batang. Manakah penjelasan kekeliruannya?", options: ["A. Pola ke-25 tidak terdiri atas 25 segitiga.", "B. Segitiga bersambung berbagi sisi, segitiga baru hanya menambah 2 batang.", "C. Setiap segitiga butuh 4 batang.", "D. Batang tidak boleh dipakai bersama."], maxScore: 1, key: "B" },
@@ -67,7 +81,7 @@ const quizData = [
             },
             {
                 unit: 8, title: "Jadwal Kapal Penyeberangan", context: "Masyarakat",
-                stimulus: "Kapal berangkat pertama pukul 06.00. Keberangkatan berikutnya setiap 45 menit. Keberangkatan terakhir adalah yang paling akhir jatuh pada atau sebelum pukul 20.00.",
+                stimulus: "Sebuah kapal motor penyeberangan di dermaga sungai berangkat pertama kali pukul 06.00. Setelah itu kapal berangkat setiap 45 menit sekali. Keberangkatan terakhir adalah keberangkatan paling akhir yang jatuh pada atau sebelum pukul 20.00.",
                 questions: [
                     { id: '8a', type: 'isian', text: "Pukul berapa kapal melakukan keberangkatan ke-9?", maxScore: 1, key: "12.00", rubric: "Jawaban 12.00." },
                     { id: '8b', type: 'uraian', text: "Keberangkatan ke berapa dan pukul berapa yang menjadi keberangkatan terakhir?", maxScore: 2, key: "Ke-19, Pukul 19.30", rubric: "Kredit Penuh (2): Ke-19 dan 19.30 benar. Kredit Sebagian (1): Hanya satu elemen yang benar." },
@@ -76,7 +90,7 @@ const quizData = [
             },
             {
                 unit: 9, title: "Tumpukan Gelas di Kedai", context: "Pekerjaan",
-                stimulus: "Satu gelas tinggi 10 cm. Tiap gelas tambahan dalam tumpukan menambah tinggi 1,5 cm. Rak punya tinggi bebas 40 cm.",
+                stimulus: "Pemilik sebuah kedai minuman menumpuk gelas plastik. Satu gelas setinggi 10 cm. Setiap gelas tambahan yang dimasukkan ke dalam tumpukan menambah tinggi tumpukan sebesar 1,5 cm. Rak penyimpanan memiliki tinggi bebas 40 cm.",
                 questions: [
                     { id: '9a', type: 'isian', text: "Berapa cm tinggi tumpukan 9 gelas?", maxScore: 1, key: "22", rubric: "Jawaban 22." },
                     { id: '9b', type: 'uraian', text: "Berapa banyak gelas paling banyak yang dapat ditumpuk agar tidak menyentuh rak atas?", maxScore: 3, key: "20 gelas", rubric: "Kredit Penuh (3): Model benar (10 + (n-1)1.5 < 40), n=20. Kredit Sebagian (2): Salah membulatkan menjadi 21 (menyentuh batas). Kredit Sebagian (1): Hanya model yang benar." }
@@ -84,7 +98,7 @@ const quizData = [
             },
             {
                 unit: 10, title: "Kupon Undian Bazar", context: "Masyarakat",
-                stimulus: "Pemenang berbaris pada nomor kupon: 5, 12, 19, 26, ... Tiga siswa memegang kupon: Andi (887), Budi (1.234), Citra (2.021).",
+                stimulus: "Panitia bazar sekolah mencetak kupon undian bernomor berurutan. Hadiah utama diberikan kepada pemegang kupon yang nomornya termasuk dalam barisan 5, 12, 19, 26, ... Tiga siswa memegang kupon bernomor: Andi 887, Budi 1.234, dan Citra 2.021.",
                 questions: [
                     { id: '10a_1', type: 'pgs', text: "Apakah kupon Andi (887) menang?", options: ["Benar", "Salah"], maxScore: 1, key: "Benar" },
                     { id: '10a_2', type: 'pgs', text: "Apakah kupon Budi (1.234) menang?", options: ["Benar", "Salah"], maxScore: 1, key: "Salah" },
@@ -94,7 +108,7 @@ const quizData = [
             },
             {
                 unit: 11, title: "Lembar Kerja Tarif Parkir", image: "https://raw.githubusercontent.com/Rino-Sinus-Pandanu/Solva-PISA/main/Nomor%2011.png", context: "Pekerjaan",
-                stimulus: "Spreadsheet tarif progresif. Jam 1 = Rp3.000 (Sel B2). Sel B3 berisi rumus =B2+1500. Dst.",
+                stimulus: "Pengelola sebuah pusat perbelanjaan di Pontianak menghitung tarif parkir progresif dengan lembar kerja (spreadsheet). Tarif parkir pada jam pertama adalah Rp3.000. Sel B3 berisi rumus =B2+1500, dan rumus tersebut disalin ke sel-sel di bawahnya sehingga setiap sel menghitung tarif jam berikutnya dari sel di atasnya. Tampilan sebagian lembar kerja ditunjukkan pada tabel di bawah ini.",
                 questions: [
                     { id: '11a', type: 'isian', text: "Berapa rupiah nilai yang tampil pada sel B6 (Jam ke-5)?", maxScore: 1, key: "9000", rubric: "Jawaban 9000." },
                     { id: '11b', type: 'uraian', text: "Tuliskan rumus tarif jam ke-n secara eksplisit, lalu tentukan tarif jam ke-10.", maxScore: 1, key: "16500", rubric: "Kredit Penuh (1): Rumus (1500n+1500) dan hasil 16500 benar." },
@@ -104,7 +118,7 @@ const quizData = [
             },
             {
                 unit: 12, title: "Tinggi Muka Air Sungai", image: "https://raw.githubusercontent.com/Rino-Sinus-Pandanu/Solva-PISA/main/Nomor%2012.png", context: "Ilmiah",
-                stimulus: "Data harian (cm): Hari 1 (410), Hari 2 (392), Hari 3 (374), dst. Dermaga hanya bisa dipakai jika tinggi tidak kurang dari 250 cm.",
+                stimulus: "Petugas pos pemantau di tepi Sungai Kapuas mencatat tinggi muka air setiap pagi selama musim kemarau. Grafik di bawah ini menunjukkan hasil pencatatan selama 6 hari pertama. Dermaga kayu hanya dapat dipakai kapal jika tinggi muka air tidak kurang dari 250 cm.",
                 questions: [
                     { id: '12a', type: 'isian', text: "Berapa tinggi muka air pada hari ke-4? (Berdasarkan pola selisih tetap)", maxScore: 1, key: "356", rubric: "Jawaban 356." },
                     { id: '12b_1', type: 'pgs', text: "Pernyataan: Penurunan tinggi pada hari ke-5 lebih besar daripada hari ke-2.", options: ["Benar", "Salah"], maxScore: 1, key: "Salah" },
@@ -114,7 +128,7 @@ const quizData = [
             },
             {
                 unit: 13, title: "Penyebaran Informasi Keliru", context: "Masyarakat",
-                stimulus: "Pukul 08.00 dibagikan 2 akun. Tiap jam, pembaginya menjadi 3 kali lipat. Pukul 08.00 adalah suku pertama.",
+                stimulus: "Pada pukul 08.00, sebuah informasi keliru dibagikan oleh 2 akun media sosial. Setiap jam berikutnya, banyak akun yang membagikan informasi itu menjadi 3 kali lipat banyak akun pada jam sebelumnya. Anggaplah banyak akun pada pukul 08.00 sebagai suku pertama.",
                 questions: [
                     { id: '13a', type: 'isian', text: "Berapa banyak akun pada pukul 12.00 (suku ke-5)?", maxScore: 1, key: "162", rubric: "Jawaban 162." },
                     { id: '13b', type: 'uraian', text: "Pukul berapa banyak akun pertama kalinya melebihi 1.000?", maxScore: 2, key: "Pukul 14.00", rubric: "Kredit Penuh (2): Menyimpulkan suku ke-7 yaitu Pukul 14.00 (1458 akun). Kredit Sebagian (1): Hanya menemukan n=7 tanpa diubah ke jam." },
@@ -123,7 +137,7 @@ const quizData = [
             },
             {
                 unit: 14, title: "Peluruhan Iodium-131", context: "Ilmiah",
-                stimulus: "Massa awal 640 mikrogram. Waktu paruh 8 hari (massa menjadi setengahnya tiap 8 hari).",
+                stimulus: "Sebuah rumah sakit menyimpan sampel iodium-131 bermassa 640 mikrogram. Zat ini meluruh dengan waktu paruh sekitar 8 hari, artinya setiap 8 hari massanya menjadi setengah dari massa sebelumnya.",
                 questions: [
                     { id: '14a', type: 'isian', text: "Berapa mikrogram sampel tersisa setelah 24 hari (3 waktu paruh)?", maxScore: 1, key: "80", rubric: "Jawaban 80." },
                     { id: '14b', type: 'uraian', text: "Setelah berapa hari massa untuk pertama kalinya kurang dari 5 mikrogram?", maxScore: 2, key: "64 hari", rubric: "Kredit Penuh (2): Waktu paruh ke-8 (8x8 = 64 hari). Kredit Sebagian (1): Menjawab k=8 waktu paruh tapi tidak diubah ke hari." },
@@ -132,7 +146,7 @@ const quizData = [
             },
             {
                 unit: 15, title: "Penyusutan Nilai Mesin", context: "Pekerjaan",
-                stimulus: "Harga awal Rp80.000.000. Akhir tahun, nilai menyusut 20% (tersisa 80% atau rasio 0.8).",
+                stimulus: "Pak Rudi membeli sebuah mesin cetak seharga Rp80.000.000. Pada setiap akhir tahun, nilai mesin menyusut 20% dari nilainya pada awal tahun itu. Nilai mesin pada akhir tahun ke-1, ke-2, dan seterusnya membentuk barisan geometri.",
                 questions: [
                     { id: '15a', type: 'isian', text: "Tentukan nilai mesin pada akhir tahun ke-3. (Gunakan rasio 0.8)", maxScore: 1, key: "40960000", rubric: "Jawaban 40960000." },
                     { id: '15b', type: 'uraian', text: "Akhir tahun ke berapa nilai mesin pertama kalinya kurang dari separuh harga beli (Rp40.000.000)?", maxScore: 2, key: "Tahun ke-4", rubric: "Kredit Penuh (2): Tahun ke-4. Kredit Sebagian (1): Salah membulatkan ke tahun 3." },
@@ -141,7 +155,7 @@ const quizData = [
             },
             {
                 unit: 16, title: "Memilih Simpanan Bank", image: "https://raw.githubusercontent.com/Rino-Sinus-Pandanu/Solva-PISA/main/Nomor%2016.png", context: "Pribadi",
-                stimulus: "Dana Rp5.000.000. Bank A: Bunga majemuk 5%/tahun. Bank B: Bunga tunggal 6%/tahun.",
+                stimulus: "Dina memiliki dana Rp5.000.000 dan membandingkan dua produk simpanan. Bank A memberi bunga majemuk 5% per tahun. Bank B memberi bunga tunggal 6% per tahun. Pada bunga tunggal, bunga tiap tahun dihitung dari modal awal, sedangkan pada bunga majemuk bunga tiap tahun dihitung dari saldo awal tahun itu. Tabel di bawah ini memuat nilai \\( (1{,}05)^n \\) yang dibulatkan empat angka desimal.",
                 questions: [
                     { id: '16a', type: 'uraian', text: "Hitung saldo di masing-masing bank setelah 3 tahun. (Bank A majemuk, B tunggal)", maxScore: 1, key: "A: 5.788.125, B: 5.900.000", rubric: "Kredit Penuh (1): Kedua perhitungan benar." },
                     { id: '16b', type: 'uraian', text: "Mulai tahun ke berapa saldo di Bank A melebihi saldo Bank B?", maxScore: 2, key: "Tahun ke-9", rubric: "Kredit Penuh (2): Tahun ke-9. Kredit Sebagian (1): Mendemonstrasikan perbandingan tapi salah menyimpulkan tahun." },
@@ -150,7 +164,7 @@ const quizData = [
             },
             {
                 unit: 17, title: "Kertas Dilipat Berulang", context: "Ilmiah",
-                stimulus: "Tebal kertas 0,1 mm. Lipat dua (digandakan) berulang.",
+                stimulus: "Selembar kertas HVS memiliki tebal 0,1 mm. Kertas itu dilipat menjadi dua bagian bertumpuk, kemudian hasil lipatan dilipat dua lagi, dan seterusnya. Setiap lipatan menggandakan tebal tumpukan.",
                 questions: [
                     { id: '17a', type: 'isian', text: "Berapa milimeter (mm) tebal setelah 10 lipatan?", maxScore: 1, key: "102.4", rubric: "Jawaban 102.4." },
                     { id: '17b', type: 'uraian', text: "Tinggi Ayu 1,6 m (1600 mm). Setelah berapa lipatan tebal melampaui tinggi Ayu?", maxScore: 2, key: "14 lipatan", rubric: "Kredit Penuh (2): 14 lipatan. Kredit Sebagian (1): Gagal mengonversi satuan meter ke mm." },
@@ -159,7 +173,7 @@ const quizData = [
             },
             {
                 unit: 18, title: "Penurunan Kasus DBD", context: "Masyarakat",
-                stimulus: "Minggu 1: 1.024 kasus. Tiap minggu jumlahnya menjadi 3/4 (rasio 0.75) kali minggu sebelumnya. Target: kasus < 100.",
+                stimulus: "Dinas Kesehatan sebuah kota mencatat 1.024 kasus demam berdarah pada minggu pertama. Setelah program pengasapan dan pemberantasan sarang nyamuk, jumlah kasus mingguan menjadi 3/4 kali jumlah kasus minggu sebelumnya. Target Dinas Kesehatan adalah jumlah kasus mingguan kurang dari 100.",
                 questions: [
                     { id: '18a', type: 'isian', text: "Berapa kasus pada minggu ke-6?", maxScore: 1, key: "243", rubric: "Jawaban 243." },
                     { id: '18b', type: 'uraian', text: "Pada minggu ke berapa target < 100 pertama kali tercapai?", maxScore: 2, key: "Minggu ke-10", rubric: "Kredit Penuh (2): Minggu ke-10. Kredit Sebagian (1): Kesalahan pembulatan indeks minggu." },
@@ -168,7 +182,7 @@ const quizData = [
             },
             {
                 unit: 19, title: "Perbesaran Logo Mesin Fotokopi", context: "Pekerjaan",
-                stimulus: "Perbesaran 120% per sisi tiap tekan (rasio panjang = 1.2). Sisi awal 10 cm.",
+                stimulus: "Mesin fotokopi di sebuah usaha percetakan memperbesar gambar sehingga setiap sisi menjadi 120% dari ukuran sebelumnya setiap kali tombol perbesar ditekan. Sebuah logo berbentuk persegi dengan panjang sisi 10 cm diperbesar berulang kali.",
                 questions: [
                     { id: '19a', type: 'isian', text: "Berapa cm sisi setelah 4 kali perbesaran?", maxScore: 1, key: "20.736", rubric: "Jawaban 20.736." },
                     { id: '19b', type: 'isian', text: "Berapa kali perbesaran agar sisi melebihi 25 cm?", maxScore: 1, key: "6", rubric: "Jawaban 6 kali." },
@@ -177,16 +191,16 @@ const quizData = [
             },
             {
                 unit: 20, title: "Frekuensi Tangga Nada", context: "Ilmiah",
-                stimulus: "13 nada dari A4 (440 Hz) ke A5 (880 Hz) membentuk barisan geometri. Nada ke-1 ke nada ke-13.",
+                stimulus: "Dalam tangga nada kromatik (temperamen sama), frekuensi 13 nada berurutan dari A4 sampai A5 membentuk barisan geometri. Frekuensi nada A4 adalah 440 Hz dan frekuensi nada A5 adalah 880 Hz. Dalam kegiatan ekstrakurikuler musik, Bimo ingin mengetahui frekuensi nada E5, yaitu nada ke-8 dalam barisan tersebut.",
                 questions: [
                     { id: '20a', type: 'isian', text: "Tuliskan basis pangkat dari rasionya, r = 2 pangkat (1/?)", maxScore: 1, key: "12", rubric: "Jawaban 12 (karena r^12 = 2)." },
-                    { id: '20b', type: 'uraian', text: "Hitung frekuensi E5 (nada ke-8). Gunakan r^7 ~ 1.498.", maxScore: 2, key: "659", rubric: "Kredit Penuh (2): 440 x 1.498 = 659 Hz." },
+                    { id: '20b', type: 'uraian', text: String.raw`Hitung frekuensi nada E5. (Gunakan \(2^{\frac{1}{12}} \approx 1{,}0595\) dan kalkulator.)`, maxScore: 2, key: "659", rubric: "Kredit Penuh (2): 440 x 1.498 = 659 Hz." },
                     { id: '20c', type: 'uraian', text: "Bimo menduga selisih frekuensi tiap nada sama (aritmetika). Benar atau keliru?", maxScore: 1, key: "Keliru", rubric: "Kredit Penuh (1): Keliru, pembuktian dengan rasio membantah sifat beda tetap." }
                 ]
             },
             {
                 unit: 21, title: "Ukuran Kertas Seri A", context: "Masyarakat",
-                stimulus: "A0 luasnya 10.000 cm2. A1 adalah separuhnya (dibagi 2), dst.",
+                stimulus: "Ukuran kertas seri A ditetapkan sebagai berikut. Kertas A0 memiliki luas 1 m². Kertas A1 diperoleh dengan membagi dua kertas A0 pada sisi terpanjangnya sehingga luasnya separuh luas A0, kertas A2 diperoleh dengan cara yang sama dari A1, dan seterusnya.",
                 questions: [
                     { id: '21a', type: 'uraian', text: "Berapa luas area A4 dalam cm2 murni matematis?", maxScore: 2, key: "625", rubric: "Kredit Penuh (2): 10000 / 16 = 625 cm2." },
                     { id: '21b', type: 'isian', text: "Satu lembar A3 dipotong jadi A6 menghasilkan berapa kartu?", maxScore: 1, key: "8", rubric: "Jawaban 8." },
@@ -195,7 +209,7 @@ const quizData = [
             },
             {
                 unit: 22, title: "Pesanan Toko Daring", image: "https://raw.githubusercontent.com/Rino-Sinus-Pandanu/Solva-PISA/main/Nomor%2022.png", context: "Pekerjaan",
-                stimulus: "Jan: 250, Feb: 300, Mar: 360, Apr: 432. Rasio = 1.2 per bulan. Batas gudang = 1.500/bulan.",
+                stimulus: "Sebuah toko daring di Pontianak mencatat jumlah pesanan pada empat bulan pertama tahun ini seperti pada tabel di bawah ini. Gudang pengiriman toko hanya mampu memproses 1.500 pesanan per bulan. Beberapa nilai pangkat yang dapat membantu: \\( (1{,}2)^9 \\approx 5{,}16 \\); \\( (1{,}2)^{10} \\approx 6{,}19 \\); \\( (1{,}2)^{11} \\approx 7{,}43 \\).",
                 questions: [
                     { id: '22a', type: 'uraian', text: "Tuliskan model geometri pesanan pada bulan ke-n.", maxScore: 1, key: "250(1.2)^(n-1)", rubric: "Kredit Penuh (1): Model rasio 1.2 benar." },
                     { id: '22b', type: 'uraian', text: "Bulan ke berapa pesanan pertama melampaui kemampuan gudang?", maxScore: 2, key: "Bulan ke-11 (November)", rubric: "Kredit Penuh (2): Bulan ke-11." },
@@ -204,7 +218,7 @@ const quizData = [
             },
             {
                 unit: 23, title: "Eceng Gondok Menutupi Danau", context: "Ilmiah",
-                stimulus: "Luas danau 4.096 m2. Awal mgg 1: tertutup 4 m2. Luas berganda 2x lipat tiap minggu.",
+                stimulus: "Sebuah danau kecil milik desa di Kalimantan Barat memiliki luas permukaan 4.096 m². Pada awal minggu ke-1, tanaman eceng gondok menutupi 4 m² permukaan danau. Setiap minggu, luas tutupan eceng gondok menjadi dua kali luas tutupan pada minggu sebelumnya, selama ruang di danau masih tersedia.",
                 questions: [
                     { id: '23a', type: 'isian', text: "Berapa luas tertutup di awal mgg 6?", maxScore: 1, key: "128", rubric: "Jawaban 128." },
                     { id: '23b', type: 'uraian', text: "Awal mgg ke berapa melebihi 500 m2?", maxScore: 1, key: "Minggu ke-8", rubric: "Kredit Penuh (1): Minggu ke-8 (512 m2)." },
@@ -214,7 +228,7 @@ const quizData = [
             },
             {
                 unit: 24, title: "Permainan Menebak Bilangan", image: "https://raw.githubusercontent.com/Rino-Sinus-Pandanu/Solva-PISA/main/Nomor%2024.png", context: "Pribadi",
-                stimulus: "Tebak angka 1-1.024. Tiap tebakan (ya/tidak) membagi dua rentang angka yang mungkin.",
+                stimulus: "Dalam sebuah permainan, Raka memikirkan satu bilangan bulat dari 1 sampai 1.024. Sinta boleh mengajukan pertanyaan yang hanya dijawab “ya” atau “tidak”, misalnya “Apakah bilangannya lebih dari 512?”. Jika Sinta selalu memilih pertanyaan yang membagi bilangan-bilangan yang masih mungkin menjadi dua kelompok sama banyak, banyak bilangan yang masih mungkin menjadi setengahnya setiap kali satu pertanyaan dijawab. Tabel di bawah ini menunjukkan awal proses tersebut.",
                 questions: [
                     { id: '24a', type: 'isian', text: "Berapa banyak angka yang masih mungkin tersisa setelah 7 pertanyaan?", maxScore: 1, key: "8", rubric: "Jawaban 8." },
                     { id: '24b', type: 'pgs', text: "Berapa banyak pertanyaan pasti cukup menebak 1 angka dari 1.024?", options: ["A. 8", "B. 9", "C. 10", "D. 11"], maxScore: 1, key: "C" },
@@ -239,10 +253,32 @@ function setScore(id,s){scores[id]=s;render()}
 function finishEval(){stage='result';render();window.scrollTo(0,0)}
 function totalScore(){return Object.values(scores).reduce((a,b)=>a+(Number(b)||0),0)}
 function headerProgress(){let n=answeredCount(),all=allQuestions().length;return `<div class="row-between tiny muted" style="margin:14px 0 7px"><span>Jawaban terisi</span><strong>${n}/${all}</strong></div><div class="progress"><div style="width:${n/all*100}%"></div></div>`}
-function renderIntro(){app.innerHTML=`<section class="hero"><div class="eyebrow">Latihan literasi matematis</div><h1>Matematika yang terhubung dengan dunia nyata.</h1><p>Jelajahi barisan aritmetika dan geometri melalui konteks pribadi, pekerjaan, masyarakat, dan ilmiah. Setiap unit dimulai dari situasi nyata, lalu mengajak Anda memodelkan, menghitung, dan menafsirkan hasil.</p><div class="hero-grid"><div class="metric"><strong>24</strong><span>Unit soal</span></div><div class="metric"><strong>${allQuestions().length}</strong><span>Pertanyaan pada data aplikasi</span></div><div class="metric"><strong>2</strong><span>Jenis barisan utama</span></div></div><button class="btn btn-primary" onclick="startQuiz()">Mulai kuis <span aria-hidden="true">→</span></button></section><section class="intro-layout"><div class="panel"><h2 style="margin-top:0">Cara mengerjakan</h2><ul class="checklist"><li>Kerjakan unit secara berurutan atau pilih unit melalui navigasi.</li><li>Jawaban isian dan pilihan ganda diperiksa otomatis sebagai umpan balik awal.</li><li>Setelah semua unit, evaluasi mandiri menampilkan kunci dan rubrik untuk <b>seluruh pertanyaan</b>, bukan hanya uraian.</li><li>Untuk uraian, baca rubrik lalu tentukan kredit yang sesuai dengan pekerjaan Anda.</li></ul><div class="notice">Catatan akademik: aplikasi ini merupakan prototipe latihan PISA-Like, bukan tes resmi PISA dan belum menggantikan validasi ahli maupun uji coba empiris.</div></div><aside class="panel"><h3 style="margin-top:0">Yang akan dilatih</h3><p class="muted">Merumuskan situasi secara matematis, menerapkan strategi perhitungan, serta menafsirkan dan mengevaluasi hasil berdasarkan konteks.</p><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><p class="tiny muted">Sumber soal: makalah “Pengembangan Soal PISA-Like pada Materi Barisan Bilangan” dan data soal yang disertakan pengguna.</p></aside></section>`}
+function renderIntro(){app.innerHTML=`<section class="hero"><div class="eyebrow">Latihan literasi matematis</div><h1>Latihan Soal PISA-Like: Barisan Bilangan</h1><p>Pelajari penerapan barisan aritmetika dan geometri melalui berbagai permasalahan kontekstual.</p><div class="hero-grid"><div class="metric"><strong>24</strong><span>Unit soal</span></div><div class="metric"><strong>${allQuestions().length}</strong><span>Pertanyaan pada data aplikasi</span></div><div class="metric"><strong>2</strong><span>Jenis barisan utama (aritmatika & geometri)</span></div></div><button class="btn btn-primary" onclick="startQuiz()">Mulai kuis <span aria-hidden="true">→</span></button></section><section class="intro-layout"><div class="panel"><h2 style="margin-top:0">Cara mengerjakan</h2><ul class="checklist"><li>Kerjakan unit secara berurutan atau pilih unit melalui navigasi.</li><li>Jawaban isian dan pilihan ganda diperiksa otomatis sebagai umpan balik awal.</li><li>Setelah semua unit, evaluasi mandiri menampilkan kunci dan rubrik untuk <b>seluruh pertanyaan</b>, bukan hanya uraian.</li><li>Untuk uraian, baca rubrik lalu tentukan kredit yang sesuai dengan pekerjaan Anda.</li></ul><div class="notice">Catatan akademik: aplikasi ini merupakan prototipe latihan PISA-Like, bukan tes resmi PISA dan belum menggantikan validasi ahli maupun uji coba empiris.</div></div><aside class="panel"><h3 style="margin-top:0">Yang akan dilatih</h3><p class="muted">Merumuskan situasi secara matematis (formulate), menerapkan strategi perhitungan (employ), serta menafsirkan dan mengevaluasi hasil berdasarkan konteks (interpret & evaluate).</p><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><p class="tiny muted">Sumber soal: Makalah “Pengembangan Soal PISA-Like pada Materi Barisan Bilangan oleh Rino Sinus Pandanu” dan data soal yang disertakan.</p></aside></section>`}
 function renderQuiz(){let unit=quizData[currentUnit];visited.add(currentUnit);let done=unit.questions.filter(q=>String(answers[q.id]||'').trim()!=='').length;let qhtml=unit.questions.map(q=>`<section class="question"><div class="qmeta"><span>Pertanyaan ${esc(q.id)}</span><span>${q.maxScore} poin</span></div><h3>${esc(q.text)}</h3>${q.type==='isian'?`<input class="field" aria-label="Jawaban ${esc(q.id)}" placeholder="Ketik jawaban singkat..." value="${esc(answers[q.id]||'')}" oninput="setAnswer('${q.id}',this.value)">`:q.type==='uraian'?`<textarea class="field textarea" aria-label="Uraian ${esc(q.id)}" placeholder="Tuliskan model, langkah perhitungan, dan alasan Anda..." oninput="setAnswer('${q.id}',this.value)">${esc(answers[q.id]||'')}</textarea>`:(q.options||[]).map((opt,i)=>{let val=String(opt).charAt(0);return `<label class="option"><input type="radio" name="${esc(q.id)}" value="${esc(val)}" ${answers[q.id]===val?'checked':''} onchange="setAnswer('${q.id}',this.value)"><span>${esc(opt)}</span></label>`}).join('')}</section>`).join('');app.innerHTML=`<div class="app-layout"><aside class="panel sidebar"><div class="side-title">Navigasi unit</div><div class="unit-list">${quizData.map((u,i)=>`<button class="unit-btn ${i===currentUnit?'active':''} ${u.questions.every(q=>String(answers[q.id]||'').trim()!=='')?'done':''}" onclick="goUnit(${i})" aria-label="Unit ${i+1}">${i+1}</button>`).join('')}</div>${headerProgress()}<p class="tiny muted">${visited.size} dari 24 unit dibuka</p><button class="btn btn-light" style="width:100%;margin-top:12px" onclick="if(confirm('Kembali ke halaman awal? Jawaban saat ini tetap tersimpan selama halaman tidak dimuat ulang.')){stage='intro';render()}">Keluar ke beranda</button></aside><section><div class="panel"><div class="row-between"><span class="pill gold">UNIT ${unit.unit} / ${quizData.length}</span><span class="pill">Konteks: ${esc(unit.context)}</span></div><h1 style="font-size:clamp(25px,4vw,34px);line-height:1.2;margin:16px 0 0">${esc(unit.title)}</h1><div class="stimulus"><div class="eyebrow" style="color:#8a5a00">Situasi</div><p style="margin:8px 0 0">${esc(unit.stimulus)}</p>${unit.image?`<figure style="margin:16px 0 0"><img src="${unit.image}" alt="Gambar pendukung soal Unit ${unit.unit}" loading="lazy" style="display:block;width:100%;max-width:850px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:10px;background:white"><figcaption class="tiny muted" style="text-align:center;margin-top:6px">Gambar pendukung soal</figcaption></figure>`:""}</div><div class="row-between"><h2 style="font-size:18px;margin:0">Tantangan Anda</h2><span class="tiny muted">${done}/${unit.questions.length} terisi pada unit ini</span></div>${qhtml}<div class="actions"><button class="btn btn-light" ${currentUnit===0?'disabled':''} onclick="goUnit(${currentUnit-1})">← Unit sebelumnya</button><span class="tiny muted">Unit ${currentUnit+1} dari 24</span>${currentUnit<quizData.length-1?`<button class="btn btn-dark" onclick="goUnit(${currentUnit+1})">Unit berikutnya →</button>`:`<button class="btn btn-primary" onclick="if(confirm('Kirim jawaban dan masuk ke evaluasi mandiri? Pastikan pekerjaan Anda sudah selesai.'))submitQuiz()">Kirim jawaban & evaluasi →</button>`}</div>${currentUnit===quizData.length-1?`<p class="tiny muted">Setelah dikirim, Anda akan masuk ke evaluasi mandiri yang mencakup seluruh pertanyaan dari Unit 1 sampai Unit 24.</p>`:''}</div></section></div>`}
 function renderEval(){let items=allQuestions();let scored=items.filter(({q})=>scores[q.id]!==undefined).length;app.innerHTML=`<section class="hero" style="padding:30px;margin-bottom:22px"><div class="eyebrow">Tahap refleksi</div><h1 style="font-size:clamp(27px,4vw,38px);margin:10px 0">Evaluasi mandiri menyeluruh</h1><p>Semua pertanyaan ditampilkan berurutan, termasuk isian, pilihan ganda, dan uraian. Cocokkan jawaban dengan kunci serta rubrik. Skor otomatis untuk soal objektif adalah saran awal dan dapat Anda sesuaikan setelah meninjau jawaban.</p><div class="row-between tiny"><span>${scored} dari ${items.length} pertanyaan memiliki skor awal</span><strong>${totalScore()} / ${maxTotal()} poin saat ini</strong></div><div class="progress" style="margin-top:8px"><div style="width:${scored/items.length*100}%"></div></div></section><div class="notice" style="margin-bottom:18px"><b>Penting:</b> penilaian mandiri bukan penilaian eksternal. Untuk penggunaan penelitian, hasil perlu ditinjau guru/penilai dan instrumen perlu divalidasi. Rubrik yang tersedia dalam data sumber ditampilkan apa adanya.</div>${items.map(({unit,q},i)=>{let score=scores[q.id]??0;let auto=q.type!=='uraian';return `<section class="eval-card"><div class="qmeta"><span>Unit ${unit.unit} · ${esc(unit.title)} · ${esc(q.id)}</span><span>Maks. ${q.maxScore} poin</span></div><h3 style="font-size:16px;margin:12px 0">${esc(q.text)}</h3><div class="eval-grid"><div class="answer-box"><b>Jawaban Anda</b><p style="margin-bottom:0">${esc(answers[q.id]||'(Belum diisi)')}</p></div><div class="key-box"><b>Kunci jawaban</b><p style="margin-bottom:0">${esc(q.key||'Tidak tersedia dalam data soal')}</p>${q.rubric?`<p class="tiny" style="border-top:1px solid #b7eee0;padding-top:9px;margin-bottom:0"><b>Rubrik:</b> ${esc(q.rubric)}</p>`:''}</div></div>${auto?`<div class="tiny muted">Skor awal otomatis: ${score}/${q.maxScore}. Periksa kembali format dan satuan jawaban sebelum menetapkan skor akhir.</div>`:''}<div class="score-row"><div><b>Skor mandiri</b><div class="tiny muted">Pilih kredit sesuai kecocokan jawaban dengan kunci/rubrik.</div></div><div class="score-buttons">${Array.from({length:q.maxScore+1},(_,s)=>`<button class="score-btn ${Number(score)===s?'selected':''}" onclick="setScore('${q.id}',${s})" aria-label="Skor ${s} untuk ${esc(q.id)}">${s}</button>`).join('')}</div></div></section>`}).join('')}<div class="panel"><div class="row-between"><div><h2 style="margin:0">Selesaikan evaluasi</h2><p class="tiny muted">Skor yang dipilih akan diringkas pada halaman hasil.</p></div><button class="btn btn-primary" onclick="finishEval()">Lihat hasil akhir →</button></div></div>`}
 function renderResult(){let total=totalScore(),max=maxTotal(),pct=Math.round(total/max*100),cat=pct>=85?'Sangat baik':pct>=70?'Baik':pct>=55?'Cukup':pct>=40?'Perlu penguatan':'Perlu pendampingan';let objective=allQuestions().filter(({q})=>q.type!=='uraian').length,essays=allQuestions().length-objective;app.innerHTML=`<section class="panel" style="max-width:850px;margin:20px auto;padding:clamp(24px,5vw,48px)"><div class="eyebrow">Laporan hasil kuis</div><h1 style="font-size:clamp(28px,4vw,40px);line-height:1.15;margin:12px 0">Evaluasi Literasi Matematis</h1><p class="muted">Kuis PISA-Like · Barisan Aritmetika dan Geometri</p><div style="display:flex;align-items:baseline;gap:12px;margin:30px 0 16px"><span class="result-score">${total}</span><span class="muted" style="font-size:25px">/ ${max} poin</span></div><div class="progress" style="height:12px"><div style="width:${pct}%"></div></div><div class="row-between" style="margin-top:9px"><span class="tiny muted">Persentase skor</span><b>${pct}%</b></div><div class="result-grid"><div class="result-stat"><span class="tiny muted">Kategori deskriptif</span><strong>${cat}</strong></div><div class="result-stat"><span class="tiny muted">Unit soal</span><strong>24</strong></div><div class="result-stat"><span class="tiny muted">Pertanyaan</span><strong>${allQuestions().length}</strong></div></div><div class="notice">Kategori di atas merupakan ringkasan deskriptif aplikasi, bukan level kemahiran PISA yang terkalibrasi. Skor memuat penilaian mandiri untuk uraian dan perlu ditafsirkan secara hati-hati.</div><h3>Ringkasan</h3><p class="muted">Soal objektif yang dinilai otomatis: ${objective}. Soal uraian yang membutuhkan pertimbangan rubrik: ${essays}. Kunci jawaban ditampilkan untuk mendukung refleksi, bukan sebagai bukti validitas instrumen.</p><div class="actions"><button class="btn btn-light" onclick="stage='self-eval';render();window.scrollTo(0,0)">← Kembali ke evaluasi</button><button class="btn btn-dark" onclick="if(confirm('Mulai ulang kuis? Semua jawaban dan skor akan dihapus.')){answers={};scores={};visited=new Set();currentUnit=0;stage='intro';render();window.scrollTo(0,0)}">Ulangi dari awal ↻</button><button class="btn btn-primary" onclick="window.print()">Cetak hasil / PDF</button></div></section>`}
-function render(){if(stage==='intro')renderIntro();else if(stage==='quiz')renderQuiz();else if(stage==='self-eval')renderEval();else renderResult()}
+function typesetMath(){
+  if(window.MathJax && window.MathJax.typesetPromise){
+    window.MathJax.typesetPromise([app]).catch(function(error){console.warn('MathJax gagal memproses rumus:', error);});
+  }
+}
+function render(){
+  if(window.MathJax && window.MathJax.typesetClear) window.MathJax.typesetClear([app]);
+  if(stage==='intro')renderIntro();
+  else if(stage==='quiz')renderQuiz();
+  else if(stage==='self-eval')renderEval();
+  else renderResult();
+  typesetMath();
+}
 render();
-</script></body></html>
+</script>
+<script>
+/* Pembatasan interaksi dasar: menonaktifkan menu klik kanan dan penyeretan gambar. */
+document.addEventListener('contextmenu', function (event) {
+  event.preventDefault();
+});
+document.addEventListener('dragstart', function (event) {
+  if (event.target && event.target.tagName === 'IMG') event.preventDefault();
+});
+</script>
+</body></html>
